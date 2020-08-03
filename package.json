@@ -1,0 +1,37 @@
+{
+  "name": "vtr.spg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "static/js/main.js",
+  "module": "static/js/main.es.js",
+  "scripts": {
+    "build": "rollup -c && rollup -c rollup.es.config.js && node build.js",
+    "watch": "rollup -cw"
+  },
+  "author": "Vitor Rodrigues <vitorpaulorodrigues@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.0.3",
+    "fastify-static": "^3.1.0",
+    "nunjucks": "^3.2.1",
+    "point-of-view": "^4.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^5.0.2",
+    "autoprefixer": "^9.8.5",
+    "cssnano": "^4.1.10",
+    "html-minifier": "^4.0.0",
+    "less": "^3.12.0",
+    "mkdirp": "^1.0.4",
+    "postcss-cli": "^7.1.1",
+    "rollup": "^2.21.0",
+    "terser": "^4.8.0",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.6"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "> 1%",
+    "iOS >=7"
+  ]
+}
