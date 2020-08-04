@@ -9,7 +9,7 @@
         "target": "ES2020",
     },
     "include": [
-        "www/**/*"
+        "public/js"
     ],
     "exclude": [
         "node_modules"

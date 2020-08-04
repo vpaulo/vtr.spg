@@ -4,8 +4,9 @@
   "description": "",
   "main": "static/js/main.js",
   "module": "static/js/main.es.js",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c && rollup -c rollup.es.config.js && node build.js",
+    "build": "rollup -c ./scripts/rollup.config.js && rollup -c ./scripts/rollup.es.config.js && node ./scripts/build.js",
     "watch": "rollup -cw"
   },
   "author": "Vitor Rodrigues <vitorpaulorodrigues@gmail.com>",

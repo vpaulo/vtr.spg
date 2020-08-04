@@ -1,8 +1,8 @@
 import typescript from '@rollup/plugin-typescript';
-import pkg from './package.json';
+import pkg from '../package.json';
 
 export default {
-    input: 'www/js/main.ts',
+    input: 'public/js/main.ts',
     output: {
         file: pkg.module,
         format: 'es',

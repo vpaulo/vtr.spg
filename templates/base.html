@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
 
-    <style>
-        {% block styles %}
-            {{ styles | safe }}
-        {% endblock %}
-    </style>
+    {% if theme %}
+        <link rel="preload" as="style" href="/css/styles.{{theme}}.css">
+        <link rel="stylesheet" href="/css/styles.{{theme}}.css">
+    {% else %}
+        <link rel="preload" as="style" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    {% endif %}
+
+    {% if variable %}
+        <style>
+            {% block styles %}
+                {{ styles | safe }}
+            {% endblock %}
+        </style>
+    {% endif %}
 </head>
 <body>
     {% block content %} <div>test template {{hello}}</div> {% endblock %}

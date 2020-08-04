@@ -1,5 +1,6 @@
 {
-    "theme": "dark",
+    "template": "base.html",
+    "theme": "",
     "title": "This is a test title",
     "hello": "Lorum ipsun test"
 }
